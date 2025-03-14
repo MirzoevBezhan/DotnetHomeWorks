@@ -1,0 +1,16 @@
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\bin\Debug\net9.0\Infrastructure.deps.json
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\bin\Debug\net9.0\Infrastructure.dll
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\bin\Debug\net9.0\Infrastructure.pdb
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\bin\Debug\net9.0\Domain.dll
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\bin\Debug\net9.0\Domain.pdb
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\Infrastructure.AssemblyInfo.cs
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\Infrastructure.sourcelink.json
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\Infrastr.15EFFBFE.Up2Date
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\Infrastructure.dll
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\refint\Infrastructure.dll
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\Infrastructure.pdb
+D:\Dotnet\HomeTasks\SuperHomeWork\Infrastructure\obj\Debug\net9.0\ref\Infrastructure.dll

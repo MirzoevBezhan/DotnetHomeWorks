@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dotnet\\HomeTasks\\Task3-\\Infastructure\\Infastructure.csproj": {}
+    "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Infastructure\\Infastructure.csproj": {}
   },
   "projects": {
-    "D:\\Dotnet\\HomeTasks\\Task3-\\Domain\\Domain.csproj": {
+    "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dotnet\\HomeTasks\\Task3-\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Dotnet\\HomeTasks\\Task3-\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\myfav\\.nuget\\packages\\",
-        "outputPath": "D:\\Dotnet\\HomeTasks\\Task3-\\Domain\\obj\\",
+        "outputPath": "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\myfav\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "D:\\Dotnet\\HomeTasks\\Task3-\\Infastructure\\Infastructure.csproj": {
+    "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Infastructure\\Infastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dotnet\\HomeTasks\\Task3-\\Infastructure\\Infastructure.csproj",
+        "projectUniqueName": "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Infastructure\\Infastructure.csproj",
         "projectName": "Infastructure",
-        "projectPath": "D:\\Dotnet\\HomeTasks\\Task3-\\Infastructure\\Infastructure.csproj",
+        "projectPath": "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Infastructure\\Infastructure.csproj",
         "packagesPath": "C:\\Users\\myfav\\.nuget\\packages\\",
-        "outputPath": "D:\\Dotnet\\HomeTasks\\Task3-\\Infastructure\\obj\\",
+        "outputPath": "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Infastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\myfav\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -85,8 +85,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Dotnet\\HomeTasks\\Task3-\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Dotnet\\HomeTasks\\Task3-\\Domain\\Domain.csproj"
+              "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Dotnet\\HomeTasks\\Task3-Continune\\Domain\\Domain.csproj"
               }
             }
           }
@@ -107,6 +107,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[9.0.3, )"

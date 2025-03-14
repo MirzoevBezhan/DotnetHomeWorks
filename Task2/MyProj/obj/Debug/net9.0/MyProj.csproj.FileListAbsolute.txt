@@ -22,3 +22,4 @@ D:\Dotnet\HomeTasks\Task2\MyProj\obj\Debug\net9.0\refint\MyProj.dll
 D:\Dotnet\HomeTasks\Task2\MyProj\obj\Debug\net9.0\MyProj.pdb
 D:\Dotnet\HomeTasks\Task2\MyProj\obj\Debug\net9.0\MyProj.genruntimeconfig.cache
 D:\Dotnet\HomeTasks\Task2\MyProj\obj\Debug\net9.0\ref\MyProj.dll
+D:\Dotnet\HomeTasks\Task2\MyProj\bin\Debug\net9.0\Dapper.dll

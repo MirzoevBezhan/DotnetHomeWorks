@@ -3,51 +3,35 @@ using Npgsql;
 
 namespace Infastructure;
 
+using Dapper;
 using Domain;
 
-public class ClientService : IClientService
+public class ClientService 
 {
     const string connectionString = "Host=localhost;Database=task_2db;Username=postgres;Password=ipo90";
 
-    public void get()
+    public List<Client> GetAllClients()
     {
         using (var connection = new NpgsqlConnection(connectionString))
         {
             connection.Open();
-            var cmd = "select * from movies ";
-            var adapter = new NpgsqlDataAdapter(cmd, connection);
-
-            var dataset = new DataSet();
-            adapter.Fill(dataset);
-            
-            var table = dataset.Tables[0];
-
-            foreach (var column in table.Columns)
-            {
-                Console.WriteLine(column + "\t");
-            }
-
-            foreach (DataRow row in table.Rows)
-            {
-                Console.WriteLine($"{row[0]}\t{row[1]}\t{row[2]}{row[3]}");
-            }
+            var cmd = "select * from clients ";
+            var clients = connection.Query<Client>(cmd,connection).ToList();
+            return clients;
         }
 
-    } 
+    }
 
     public int addclient(Client client)
     {
         using (var con = new NpgsqlConnection(connectionString))
         {
             con.Open();
-            var cmd =
-                "insert into clients values (client.full_name, client.birthdate,client.email,client.phone,client.adress,client.account_num,client.account_type,client.balance,client.branch,client.created_at,client.updated_at)";
-            var command = new NpgsqlCommand(cmd, con);
-            var res = command.ExecuteNonQuery();
-            return res;
+            var cmd = $"insert into clients values (full_name,email,phone)" + $"values(@Full_name,@Email,@Phone)";
+            var result = con.Execute(cmd, new { client.full_name, client.email, client.phone });
+            return result;
         }
     }
-
 
     public List<Client> GetAllclients()
     {
@@ -173,7 +157,7 @@ public class ClientService : IClientService
                     };
                     client = client2;
                 }
-                    return client;
+                return client;
             }
         }
     }
@@ -202,4 +186,4 @@ public class ClientService : IClientService
         }
     }
 }
-    
+
