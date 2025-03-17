@@ -57,4 +57,24 @@ public class MemberService : IMemberService
             return result;
         }
     }
+    public int Task10()
+    {
+        using (var connection = new NpgsqlConnection(connectionString))
+        {
+            var sql = $"select distinct * from members as m join borrowings as bo on m.memberId = bo.memberId  where bo.returnDate is null and bo.dueDate < CURRENT_DATE";
+            var res = connection.QuerySingleOrDefault<int>(sql);
+            return res;
+        }
+    }
+    public List<Book> Task11()
+    {
+        using (var connection = new NpgsqlConnection(connectionString))
+        {
+            var sql = $"select * from books as b join borrowings as bo on b.bookId = bo.bookId group by b.bookId  having count(bo.borrowingId)>5";
+            var res = connection.Query<Book>(sql).ToList();
+            return res;
+        }
+    }
+    
+
 }

@@ -33,7 +33,7 @@ public class BookService : IBookService
         {
             com.Open();
             var cmd = "select * from books where BookId = @bookId";
-            var res = com.QuerySingle<Book>(cmd, new {bookId = bookId});
+            var res = com.QuerySingle<Book>(cmd, new { bookId = bookId });
             return res;
         }
     }
@@ -57,4 +57,16 @@ public class BookService : IBookService
             return result;
         }
     }
+    public int Task9()
+
+    {
+        using (var connection = new NpgsqlConnection(connectionString))
+        {
+            var sql = $" select genre from books as b join borrowings as bo on b.bookId = bo.bookId  order by b.bookId desc ";
+            var res = connection.QuerySingleOrDefault(sql);
+            return res;
+        }
+    }
+
+
 }

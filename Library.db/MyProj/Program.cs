@@ -47,9 +47,28 @@ var borrowservice = new BoorrowingService();
 //     System.Console.WriteLine();
 // }
 
-var example = borrowservice.GetBorrowById(2);
+// var example = borrowservice.GetBorrowById(2);
 
-System.Console.WriteLine(example.ReturnDate);
-System.Console.WriteLine(example.DueDate);
-System.Console.WriteLine(example.BookId);
-System.Console.WriteLine(example.BorrowingId);
+// System.Console.WriteLine(example.ReturnDate);
+// System.Console.WriteLine(example.DueDate);
+// System.Console.WriteLine(example.BookId);
+// System.Console.WriteLine(example.BorrowingId);
+// borrowservice.GetFine(1,2,DateTime.Now);
+
+// Book book = borrowservice.Task1();
+// System.Console.WriteLine(book.BookId);
+// System.Console.WriteLine(book.availableCopies);
+// System.Console.WriteLine(book.Genre);
+// foreach (var item in borrowservice.Task5())
+// {
+//     System.Console.WriteLine();
+//     System.Console.WriteLine(item.BookId);
+//     System.Console.WriteLine();
+// }
+
+// foreach (var item in borrowservice.Task6())
+// {
+//     System.Console.WriteLine();
+//     System.Console.WriteLine(item.BookId);
+//     System.Console.WriteLine();
+// }
